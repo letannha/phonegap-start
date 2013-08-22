@@ -1,0 +1,160 @@
+<DOCTYPE html> 
+<html> 
+<head> 
+<title>Title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-beta.1/jquery.mobile-1.2.0-beta.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0-beta.1/jquery.mobile-1.2.0-beta.1.min.js"></script>
+<script src="phonegap.js"></script> 
+
+</head> 
+
+<body>
+<!--------------------------Page Home----------------->
+<div data-role="page" id="page1">
+    <div data-role="header" data-theme = "t">
+        <div style = "padding-left:150px"> <img alt = "My logo" 
+            src = "http://www.chotot.vn/img/logo_vn.png" /> </div>
+         <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active">Mua</a></li>
+                <li><a href="#page2">Ban</a></li> 
+            </ul>
+        </div>
+     </div>
+                              <!---------- /Content---------------- -->
+    <div data-role="content">
+        <ul data-role="listview">
+            <li><a href="#page3"> H? Chí Minh </a> </li>
+            <li><a href="#page3"> Hà N?i </a> </li>
+            <li><a href="#page3"> Phú Yên </a> </li>
+            <li><a href="#page3"> Ðà N?ng </a> </li>
+        </ul>
+    </div>
+                            <!----------Footer-------------->
+    <div data-role="footer" data-position = "fixed">
+       <div data-role="navbar" data-iconpos="right">
+            <ul>
+                <li><a href="#page1" data-icon="home">Home</a></li>
+                <li><a href="#" data-icon = "star">Gi?i thi?u</a></li>
+                <li><a href="#page2" data-icon = "back">Ðang tin</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+                    <!-------------------Page Ban------------->
+                    <!---------------------------------------->
+<div data-role="page" id="page2">
+    <div data-role="header" data-theme = "t">
+        <div style = "padding-left:130px"> <img alt = "My logo" 
+            src = "http://www.chotot.vn/img/logo_vn.png" /> </div>
+         <div data-role="navbar">
+            <ul>
+                <li><a href="#page1" class="ui-btn-active">Mua</a></li>
+                <li><a href="#">Ban</a></li> 
+            </ul>
+        </div>
+     </div>
+                              <!-- /Content -->
+    <div data-role="content">
+         <h4>T?o tin dang:</h4>
+        <div data-role="fieldcontain">
+            <label for="select-native-fc">Ch?n vùng:</label>
+            <select name="select-native-fc" id="select-native-fc">
+                <option value="small">H? Chí Minh</option>
+                <option value="medium">Hà N?i</option>
+                <option value="large">Phú Yên</option>
+                <option value="#">Ðà N?ng</option>
+            </select>
+            <label for="select-native-fc">Ch?n chuyên m?c:</label>
+            <select name="select-native-fc" id="select-native-fc">
+                <option value="small">Xe c?</option>
+                <option value="medium">Ð? di?n t?</option>
+                <option value="large">B?t d?ng s?n</option>
+            </select>            
+           <label for="text-basic">T?a d?:</label>
+          <input type="text" name="text-basic" id="text-basic" value=""/>
+          <label for="textarea">N?i dung tin:</label>
+          <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+          <label for="text-basic">Giá (VNÐ):</label>
+          <input type="text" name="text-basic1" id="text-basic1" value=""/>
+        
+         <label for="file-2">Ðang hình:</label>
+         <input type="file" data-clear-btn="true" name="file-2" id="file-2" value=""/>
+          <label for="text-basic">Tên:</label>
+          <input type="text" name="" id="" value=""/>
+          <label for="text-basic">S? di?n tho?i:</label>
+          <input type="text" name="" id="" value=""/>
+           <a style = "width:100px" href="#" data-role="button" data-mini="true" data-icon="check" data-theme="b">OK!</a>
+        </div>
+                
+     </div>
+    <div data-role="footer" data-position = "fixed" >
+       <div data-role="navbar" data-iconpos="right">
+            <ul>
+                <li><a href="#page1" data-icon="home">Home</a></li>
+                <li><a href="#" data-icon = "star">Gi?i thi?u</a></li>
+                <li><a href="#page2" data-icon = "back">Ðang tin</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+        <!----------Page List goods------------------------->
+        <!-------------------------------------------------->
+<div data-role="page" id="page3">
+    <div data-role="header" data-theme = "t">
+        <div style = "padding-left:130px"> <img alt = "My logo" 
+            src = "http://www.chotot.vn/img/logo_vn.png" /> </div>
+         <div data-role="navbar">
+            <ul>
+                <li><a href="#page1" class="ui-btn-active">Mua</a></li>
+                <li><a href="#page2">Ban</a></li> 
+            </ul>
+         <form>
+            <input type="search" name="search-1" id="search-1" value="" placeholder= "Search"/>
+        </form>
+        </div>
+     </div>
+                              <!-- /Content -->
+    <div data-role="content">
+          <ul data-role="listview"  data-theme="d" data-inset="true">
+            <li><a href="#">
+                <img src="http://static.chotot.com.vn/thumbs/29/2973620872.jpg"/>
+                <h2>HP 6530s</h2>
+                <p>4.000.000 VNÐ</p></a>
+                <a href="#purchase" >Order</a>
+            </li>
+            <li><a href="#" >
+                <img src="http://static.chotot.com.vn/thumbs/29/2928857464.jpg"/>
+                <h2>Moto CBR 150cc</h2>
+                <p>37.000.000 VNÐ</p></a>
+                <a href="#purchase">Order</a>
+            </li>
+            <li><a href="#">
+                <img src="http://static.chotot.com.vn/thumbs/29/2920125857.jpg"/>
+                <h2>Dell</h2>
+                <p>5.000.000 VNÐ</p></a>
+                <a href="#purchase">Order</a>
+            </li>
+        </ul>
+       
+    </div>      
+                
+    <div data-role="footer" data-position = "fixed">
+       <div data-role="navbar" data-iconpos="right">
+            <ul>
+                <li><a href="#page1" data-icon="home">Home</a></li>
+                <li><a href="#" data-icon = "star">Gi?i thi?u</a></li>
+                <li><a href="#page2" data-icon = "back">Ðang tin</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
+
